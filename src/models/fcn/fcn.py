@@ -5,7 +5,7 @@ import torch.nn as nn
 import math
 from torchvision import models
 from pytorch_lightning import LightningModule
-from torchvision.prototype import models as PM
+
 
 from ...metricsHardSegmentation import *
 

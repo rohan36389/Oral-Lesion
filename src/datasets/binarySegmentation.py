@@ -46,6 +46,7 @@ class BinarySegmentationDataset(torch.utils.data.Dataset):
         width, height = image.size
         mask = Image.new('L', (width, height))
         for segment in segments:
+            # print(f"DEBUG: segment={segment}, type={type(segment)}, len={len(segment)}")
             ImageDraw.Draw(mask).polygon(segment, outline=1, fill=1)
         
         if self.transform:
