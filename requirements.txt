@@ -1,7 +1,8 @@
---extra-index-url https://download.pytorch.org/whl/cpu
+--index-url https://download.pytorch.org/whl/cpu
+--extra-index-url https://pypi.org/simple
 fastapi
 uvicorn
 python-multipart
 Pillow
-torch==2.2.0+cpu
-torchvision==0.17.0+cpu
+torch
+torchvision
