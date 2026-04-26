@@ -53,7 +53,7 @@ function App() {
     formData.append('file', selectedFile)
 
     try {
-      const response = await fetch('http://localhost:8001/predict', {
+      const response = await fetch('/api/predict', {
         method: 'POST',
         body: formData,
       })

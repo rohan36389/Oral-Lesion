@@ -53,10 +53,12 @@ data_transforms = transforms.Compose([
 ])
 
 @app.get("/")
+@app.get("/api/")
 def read_root():
     return {"message": "Oral Cancer Classification API is running"}
 
 @app.post("/predict")
+@app.post("/api/predict")
 async def predict(file: UploadFile = File(...)):
     if model is None:
         return {"error": "Model not loaded"}
